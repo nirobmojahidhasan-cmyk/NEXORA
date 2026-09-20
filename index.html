@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Log In · NEXORA ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="auth-screen">
+  <div class="auth-card">
+    <p class="brand">NEXORA ERP</p>
+    <p class="brand-sub">Smart Business Management Dashboard</p>
+    <div class="msg error" id="login-error">Invalid email or password.</div>
+    <form id="login-form">
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@company.com" required>
+      </div>
+      <div class="field pw-row">
+        <label for="pw">Password</label>
+        <input id="pw" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+        <button type="button" class="pw-toggle" onclick="togglePassword('pw', this)">SHOW</button>
+      </div>
+      <div class="remember-row">
+        <label><input type="checkbox" style="margin-right:6px;">Remember me</label>
+        <a href="forgot-password.html">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn-primary" onclick="event.preventDefault(); window.location='dashboard.html';">LOG IN &rarr;</button>
+    </form>
+    <p class="auth-foot">No account? <a href="signup.html">Sign up</a></p>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

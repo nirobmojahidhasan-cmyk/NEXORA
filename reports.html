@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reports · NEXORA ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="side-brand">NEXORA</div>
+      <a class="nav-item" href="dashboard.html"><span class="dot"></span>Dashboard</a>
+      <a class="nav-item" href="employees.html"><span class="dot"></span>Employees</a>
+      <a class="nav-item" href="products.html"><span class="dot"></span>Products</a>
+      <a class="nav-item" href="inventory.html"><span class="dot"></span>Inventory</a>
+      <a class="nav-item" href="sales.html"><span class="dot"></span>Sales</a>
+      <a class="nav-item" href="invoice.html"><span class="dot"></span>Invoice</a>
+      <a class="nav-item" href="finance.html"><span class="dot"></span>Finance</a>
+      <a class="nav-item active" href="reports.html"><span class="dot"></span>Reports</a>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <h1>Reports</h1>
+      <button class="theme-btn" onclick="toggleTheme()">&#9789; / &#9728; Theme</button>
+    </div>
+    <div class="content">
+
+      <div class="panel table-wrap">
+        <h3>Reports</h3>
+        <table>
+          <tr><th>Report</th><th>Period</th><th></th></tr>
+          <tr><td>Sales Report</td><td>This Month</td><td><button class="btn-mini" onclick="showToast('Open report view')">View</button></td></tr>
+          <tr><td>Inventory Report</td><td>This Month</td><td><button class="btn-mini" onclick="showToast('Open report view')">View</button></td></tr>
+          <tr><td>Employee Report</td><td>This Quarter</td><td><button class="btn-mini" onclick="showToast('Open report view')">View</button></td></tr>
+          <tr><td>Customer Report</td><td>This Quarter</td><td><button class="btn-mini" onclick="showToast('Open report view')">View</button></td></tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

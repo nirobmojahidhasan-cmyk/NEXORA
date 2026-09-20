@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Invoice · NEXORA ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="side-brand">NEXORA</div>
+      <a class="nav-item" href="dashboard.html"><span class="dot"></span>Dashboard</a>
+      <a class="nav-item" href="employees.html"><span class="dot"></span>Employees</a>
+      <a class="nav-item" href="products.html"><span class="dot"></span>Products</a>
+      <a class="nav-item" href="inventory.html"><span class="dot"></span>Inventory</a>
+      <a class="nav-item" href="sales.html"><span class="dot"></span>Sales</a>
+      <a class="nav-item active" href="invoice.html"><span class="dot"></span>Invoice</a>
+      <a class="nav-item" href="finance.html"><span class="dot"></span>Finance</a>
+      <a class="nav-item" href="reports.html"><span class="dot"></span>Reports</a>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <h1>Invoice</h1>
+      <button class="theme-btn" onclick="toggleTheme()">&#9789; / &#9728; Theme</button>
+    </div>
+    <div class="content">
+
+      <div class="panel no-print" style="display:flex; gap:10px; justify-content:flex-end;">
+        <button class="btn-mini" onclick="window.print()">Print Invoice</button>
+        <button class="btn-mini" onclick="showToast('Download hooked up by JS owner')">Download PDF</button>
+      </div>
+      <div class="panel">
+        <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-bottom:18px;">
+          <div>
+            <p class="brand" style="font-size:20px;">NEXORA ERP</p>
+            <p class="scanline-note">123 Commerce Lane, Comilla, Bangladesh</p>
+          </div>
+          <div style="text-align:right;">
+            <p class="scanline-note">Invoice #INV-1042</p>
+            <p class="scanline-note">Date: 20 Sep 2026</p>
+          </div>
+        </div>
+        <p class="scanline-note">Bill to: Rafiul Islam &middot; rafiul@example.com</p>
+        <table style="margin-top:14px;">
+          <tr><th>Item</th><th>Qty</th><th>Price</th><th>Total</th></tr>
+          <tr><td>Retro Keyboard</td><td>1</td><td>$45.00</td><td>$45.00</td></tr>
+          <tr><td>Y2K Sunglasses</td><td>2</td><td>$18.00</td><td>$36.00</td></tr>
+        </table>
+        <div style="text-align:right; margin-top:14px;">
+          <p class="scanline-note">Subtotal: $81.00</p>
+          <p class="scanline-note">VAT (5%): $4.05</p>
+          <p style="font-family:'Chakra Petch'; font-weight:700; font-size:16px;">Total: $85.05</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

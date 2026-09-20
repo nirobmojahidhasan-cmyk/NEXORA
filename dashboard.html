@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dashboard · NEXORA ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="side-brand">NEXORA</div>
+      <a class="nav-item active" href="dashboard.html"><span class="dot"></span>Dashboard</a>
+      <a class="nav-item" href="employees.html"><span class="dot"></span>Employees</a>
+      <a class="nav-item" href="products.html"><span class="dot"></span>Products</a>
+      <a class="nav-item" href="inventory.html"><span class="dot"></span>Inventory</a>
+      <a class="nav-item" href="sales.html"><span class="dot"></span>Sales</a>
+      <a class="nav-item" href="invoice.html"><span class="dot"></span>Invoice</a>
+      <a class="nav-item" href="finance.html"><span class="dot"></span>Finance</a>
+      <a class="nav-item" href="reports.html"><span class="dot"></span>Reports</a>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <h1>Dashboard</h1>
+      <button class="theme-btn" onclick="toggleTheme()">&#9789; / &#9728; Theme</button>
+    </div>
+    <div class="content">
+
+      <div class="stat-grid">
+        <div class="stat-card"><span class="chip up">+12%</span><div class="lbl">Total Revenue</div><div class="val">$84,210</div></div>
+        <div class="stat-card"><span class="chip up">+4%</span><div class="lbl">Total Sales</div><div class="val">1,204</div></div>
+        <div class="stat-card"><span class="chip up">+2%</span><div class="lbl">Customers</div><div class="val">386</div></div>
+        <div class="stat-card"><span class="chip down">-1%</span><div class="lbl">Employees</div><div class="val">42</div></div>
+        <div class="stat-card"><span class="chip up">+7%</span><div class="lbl">Products</div><div class="val">158</div></div>
+      </div>
+      <div class="panels">
+        <div class="panel">
+          <h3>Monthly Performance</h3>
+          <div class="bars">
+            <div class="bar" style="height:40%"></div><div class="bar" style="height:65%"></div>
+            <div class="bar" style="height:50%"></div><div class="bar" style="height:80%"></div>
+            <div class="bar" style="height:60%"></div><div class="bar" style="height:95%"></div>
+            <div class="bar" style="height:75%"></div>
+          </div>
+          <p class="scanline-note">Static placeholder bars &mdash; wire to Chart.js with real sales data.</p>
+        </div>
+        <div class="panel">
+          <h3>Notifications</h3>
+          <table>
+            <tr><td>&#9888; Low stock &mdash; SKU-2291</td></tr>
+            <tr><td>&#10003; New order #8841</td></tr>
+            <tr><td>&#10003; New customer registered</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Recent Orders</h3>
+        <div class="table-wrap">
+        <table>
+          <tr><th>Order</th><th>Customer</th><th>Amount</th><th>Status</th></tr>
+          <tr><td>#8841</td><td>Rafiul Islam</td><td>$210</td><td><span class="status active">Paid</span></td></tr>
+          <tr><td>#8840</td><td>Mim Akter</td><td>$95</td><td><span class="status pending">Pending</span></td></tr>
+          <tr><td>#8839</td><td>Tanvir Ahmed</td><td>$340</td><td><span class="status active">Paid</span></td></tr>
+        </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
